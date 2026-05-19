@@ -1,7 +1,5 @@
 # 🚀 Fixly AI Verification Engine
 
-**[🔴 Live UI Demo: Click Here] (Replace with your Vercel Link when ready)**
-
 An automated, end-to-end AI pipeline built to verify the skills of blue-collar workers by analyzing trade videos. It utilizes a custom split-stack architecture to handle heavy multi-modal AI processing alongside a seamless React frontend.
 
 ### 🛠️ Tech Stack
@@ -24,7 +22,8 @@ An automated, end-to-end AI pipeline built to verify the skills of blue-collar w
 ## 📸 Application Previews
 
 ### 1. AI Analysis & Pipeline Progress
-*(Drag and drop your 'AI is analyzing your video' screenshot here)*
+<img width="695" height="818" alt="Screenshot 2026-05-19 201012" src="https://github.com/user-attachments/assets/522c45d6-cd9d-4808-b540-d766fe8e4eb0" />
+
 
 ### 2. Comprehensive Scoring Dashboard (80/100)
 *(Drag and drop your 'AI Analysis Results' screenshot here)*
