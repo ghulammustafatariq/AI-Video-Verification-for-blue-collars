@@ -26,10 +26,11 @@ An automated, end-to-end AI pipeline built to verify the skills of blue-collar w
 
 
 ### 2. Comprehensive Scoring Dashboard (80/100)
-*(Drag and drop your 'AI Analysis Results' screenshot here)*
+<img width="1918" height="911" alt="Screenshot 2026-05-19 200934" src="https://github.com/user-attachments/assets/96975525-4fdb-4ca5-b46f-e15857c21022" />
 
-### 3. Segment Breakdown & Temporal Consistency
-*(Drag and drop your detailed violations and temporal consistency graph screenshots here)*
+### 3.Calibration Analysis
+<img width="707" height="814" alt="Screenshot 2026-05-19 201029" src="https://github.com/user-attachments/assets/2cfcbbae-b0ab-463e-bee5-e563fa1b515d" />
+
 
 ---
 
