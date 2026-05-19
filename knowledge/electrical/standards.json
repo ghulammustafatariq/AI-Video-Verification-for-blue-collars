@@ -1,0 +1,24 @@
+{
+  "trade": "Electrical",
+  "standards": [
+    {"id": "ELEC-001", "title": "Circuit Breaker Sizing", "rule": "Breaker must be sized at 125% of continuous load. 15A for lighting, 20A for kitchen outlets.", "violation_indicator": "Frequent tripping, warm breaker", "reference": "NEC 210.20 / PEC Section 2.10"},
+    {"id": "ELEC-002", "title": "GFCI Protection", "rule": "GFCI required within 6 feet of water source: kitchens, bathrooms, outdoor, garage, crawlspace", "violation_indicator": "No GFCI outlet near water", "reference": "NEC 210.8"},
+    {"id": "ELEC-003", "title": "Junction Box Required", "rule": "All wire splices must be enclosed in an accessible junction box. No open-air splices.", "violation_indicator": "Exposed wire connections, tape-only splices", "reference": "NEC 300.15"},
+    {"id": "ELEC-004", "title": "Wire Color Coding", "rule": "Black/Red = hot, White = neutral, Green/Bare = ground. Consistent throughout installation.", "violation_indicator": "Wrong color used, multiple hot colors mixed", "reference": "NEC 200.6 / 250.119"},
+    {"id": "ELEC-005", "title": "Outlet Spacing", "rule": "No point along wall should be more than 6 feet from an outlet. Minimum 1 outlet per 12ft wall.", "violation_indicator": "Extension cords in permanent use", "reference": "NEC 210.52"}
+  ],
+  "safety": [
+    {"id": "SAFE-ELEC-01", "protocol": "Lockout/Tagout", "requirement": "Turn off breaker and verify with voltage tester before touching any wires", "mitigates": "Electrocution, arc flash"},
+    {"id": "SAFE-ELEC-02", "protocol": "Insulated Tools", "requirement": "Use VDE-certified insulated screwdrivers, pliers, and cutters rated for 1000V", "mitigates": "Shock from accidental contact with live parts"},
+    {"id": "SAFE-ELEC-03", "protocol": "Rubber Sole Shoes", "requirement": "Wear rubber-soled non-conductive footwear when working on electrical", "mitigates": "Ground fault current path through body"},
+    {"id": "SAFE-ELEC-04", "protocol": "Arc Flash Protection", "requirement": "Face shield, FR clothing for panel work above 240V", "mitigates": "Arc flash burns, blindness"}
+  ],
+  "tools": [
+    {"name": "Multimeter", "alternative_names": ["voltmeter", "DMM"], "use": "Measuring voltage, current, resistance, continuity"},
+    {"name": "Voltage Tester", "alternative_names": ["non-contact tester", "voltage pen"], "use": "Quick live/dead wire detection"},
+    {"name": "Wire Stripper", "alternative_names": ["wire cutter"], "use": "Removing insulation from wire ends"},
+    {"name": "Lineman's Pliers", "alternative_names": ["combination pliers"], "use": "Cutting, twisting, pulling wire"},
+    {"name": "Fish Tape", "alternative_names": ["draw wire"], "use": "Pulling wire through conduit and walls"},
+    {"name": "Circuit Tracer", "alternative_names": ["breaker finder"], "use": "Identifying which breaker controls which outlet"}
+  ]
+}

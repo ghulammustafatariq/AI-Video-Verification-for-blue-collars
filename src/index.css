@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Background pattern */
+.bg-pattern {
+  background-color: #f8fafc;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(26, 115, 232, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(26, 115, 232, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 50% 80%, rgba(52, 168, 83, 0.03) 0%, transparent 50%);
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Button hover glow */
+.btn-glow:hover {
+  box-shadow: 0 0 20px rgba(26, 115, 232, 0.3);
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Score ring pulse */
+@keyframes ring-pulse {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(26, 115, 232, 0.3)); }
+  50% { filter: drop-shadow(0 0 12px rgba(26, 115, 232, 0.5)); }
+}
+
+/* Fade in animation */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in-up 0.4s ease-out forwards;
+}
+
+/* Staggered children */
+.stagger > * {
+  animation: fade-in-up 0.4s ease-out forwards;
+  opacity: 0;
+}
+.stagger > *:nth-child(1) { animation-delay: 0.05s; }
+.stagger > *:nth-child(2) { animation-delay: 0.1s; }
+.stagger > *:nth-child(3) { animation-delay: 0.15s; }
+.stagger > *:nth-child(4) { animation-delay: 0.2s; }
+.stagger > *:nth-child(5) { animation-delay: 0.25s; }
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #1A73E8, #0D47A1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

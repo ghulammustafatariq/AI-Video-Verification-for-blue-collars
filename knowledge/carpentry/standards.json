@@ -1,0 +1,26 @@
+{
+  "trade": "Carpentry",
+  "standards": [
+    {"id": "CARP-001", "title": "Stud Spacing", "rule": "Wall studs must be spaced 16 inches on center (OC) for load-bearing walls. 24 inches OC allowed for non-load-bearing.", "violation_indicator": "Uneven spacing, wall bowing", "reference": "IRC R602.3"},
+    {"id": "CARP-002", "title": "Door Frame Rough Opening", "rule": "Rough opening must be 2 inches wider and 2.5 inches taller than door slab for standard pre-hung doors", "violation_indicator": "Door does not fit, excessive shimming", "reference": "Industry standard"},
+    {"id": "CARP-003", "title": "Stair Rise and Run", "rule": "Maximum riser height 7-3/4 inches, minimum tread depth 10 inches. Variation between steps < 3/8 inch.", "violation_indicator": "Uneven steps, tripping hazard", "reference": "IRC R311.7"},
+    {"id": "CARP-004", "title": "Nailing Schedule", "rule": "Use 16d common nails for framing (3-1/2 inch). 3 nails per stud connection for 2x4.", "violation_indicator": "Insufficient or wrong-size nails, structural weakness", "reference": "IRC Table R602.3(1)"},
+    {"id": "CARP-005", "title": "Moisture Barrier", "rule": "Install sill sealer (foam gasket) between concrete foundation and bottom plate to prevent moisture wicking", "violation_indicator": "Rot at base of walls, musty smell", "reference": "IRC R317.1"}
+  ],
+  "safety": [
+    {"id": "SAFE-CARP-01", "protocol": "Dust Protection", "requirement": "N95 mask or respirator when cutting wood, especially treated lumber and MDF", "mitigates": "Respiratory irritation, long-term lung damage"},
+    {"id": "SAFE-CARP-02", "protocol": "Hearing Protection", "requirement": "Earplugs or earmuffs when operating saws > 85 dB (all power saws)", "mitigates": "Hearing loss, tinnitus"},
+    {"id": "SAFE-CARP-03", "protocol": "Kickback Prevention", "requirement": "Use riving knife, anti-kickback pawls, and push sticks on table saw", "mitigates": "Severe hand/finger injury, projectile wood"},
+    {"id": "SAFE-CARP-04", "protocol": "Steel-Toe Boots", "requirement": "Steel-toe boots required when handling heavy lumber or working at elevation", "mitigates": "Crushed toes, puncture wounds"}
+  ],
+  "tools": [
+    {"name": "Circular Saw", "alternative_names": ["skill saw"], "use": "Straight cuts in lumber and sheet goods"},
+    {"name": "Framing Square", "alternative_names": ["carpenter's square"], "use": "Marking 90-degree cuts and checking squareness"},
+    {"name": "Spirit Level", "alternative_names": ["bubble level"], "use": "Checking horizontal and vertical alignment"},
+    {"name": "Chalk Line", "alternative_names": ["snap line"], "use": "Marking long straight reference lines"},
+    {"name": "Nail Gun", "alternative_names": ["framing nailer"], "use": "Fast framing assembly with rapid nail driving"},
+    {"name": "Speed Square", "alternative_names": ["rafter square", "triangle square"], "use": "Quick 45/90 degree marking, rafter layout"},
+    {"name": "Measuring Tape", "alternative_names": ["tape measure"], "use": "Accurate measurement - minimum 25 ft for framing"},
+    {"name": "Clamps", "alternative_names": ["bar clamp", "quick-grip"], "use": "Holding workpieces securely during cutting/assembly"}
+  ]
+}

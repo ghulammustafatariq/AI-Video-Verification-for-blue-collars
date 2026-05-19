@@ -1,0 +1,84 @@
+{
+  "trade": "Plumbing",
+  "standards": [
+    {
+      "id": "PLUM-001",
+      "title": "Pipe Slope Requirements",
+      "rule": "Drain pipes must slope at minimum 1/4 inch per foot (2% grade) for pipes under 3 inches diameter",
+      "violation_indicator": "Insufficient slope, standing water, slow drainage",
+      "reference": "IPC 704.1 / Pakistan Building Code Section P-2603"
+    },
+    {
+      "id": "PLUM-002",
+      "title": "Vent Pipe Installation",
+      "rule": "Every fixture trap must be vented within 6 feet of the trap weir to prevent siphonage",
+      "violation_indicator": "Gurgling drains, sewer gas smell, slow drainage",
+      "reference": "IPC 901.2"
+    },
+    {
+      "id": "PLUM-003",
+      "title": "Water Hammer Prevention",
+      "rule": "Install water hammer arrestors on quick-closing valve supply lines (washing machine, dishwasher)",
+      "violation_indicator": "Loud banging noise when water stops, pipe vibration",
+      "reference": "IPC 604.9"
+    },
+    {
+      "id": "PLUM-004",
+      "title": "Hot Water Temperature",
+      "rule": "Water heater thermostat should be set to 120F (49C) to prevent scalding while killing bacteria",
+      "violation_indicator": "Water too hot at tap, scalding risk",
+      "reference": "IPC 501.2"
+    },
+    {
+      "id": "PLUM-005",
+      "title": "Backflow Prevention",
+      "rule": "Install backflow preventer on irrigation systems, boiler feed lines, and hose bibs",
+      "violation_indicator": "Contaminated water supply, cross-connection",
+      "reference": "IPC 608.1"
+    }
+  ],
+  "safety": [
+    {
+      "id": "SAFE-PLUM-01",
+      "protocol": "Eye Protection",
+      "requirement": "Safety glasses required when cutting pipe, soldering, or working with pressurized lines",
+      "mitigates": "Eye injury from debris, chemical splash, UV from soldering"
+    },
+    {
+      "id": "SAFE-PLUM-02",
+      "protocol": "Hand Protection",
+      "requirement": "Cut-resistant gloves for pipe cutting, heat-resistant gloves for soldering",
+      "mitigates": "Cuts, burns, chemical contact"
+    },
+    {
+      "id": "SAFE-PLUM-03",
+      "protocol": "Confined Space Entry",
+      "requirement": "Gas monitor, ventilation fan, and standby person required for manhole/crawlspace entry",
+      "mitigates": "Asphyxiation, toxic gas exposure, entrapment"
+    },
+    {
+      "id": "SAFE-PLUM-04",
+      "protocol": "Lead Safety",
+      "rule": "Use lead-free solder and fittings. Test older pipes for lead content before work.",
+      "mitigates": "Lead poisoning, contamination of drinking water"
+    }
+  ],
+  "tools": [
+    {"name": "Pipe Wrench", "alternative_names": ["plumber wrench", "Stilson wrench"], "use": "Turning and holding pipes and fittings"},
+    {"name": "Pipe Cutter", "alternative_names": ["tube cutter"], "use": "Clean cutting of copper, PVC, and PEX pipes"},
+    {"name": "Propane Torch", "alternative_names": ["blow torch", "soldering torch"], "use": "Soldering copper pipe joints"},
+    {"name": "Teflon Tape", "alternative_names": ["PTFE tape", "thread seal tape"], "use": "Sealing threaded pipe connections"},
+    {"name": "Plunger", "alternative_names": ["force cup"], "use": "Clearing clogs in drains and toilets"},
+    {"name": "Basin Wrench", "alternative_names": ["sink wrench"], "use": "Tightening/loosening faucet nuts in tight spaces"},
+    {"name": "PEX Crimping Tool", "alternative_names": ["PEX clamp tool"], "use": "Crimping PEX pipe connections"},
+    {"name": "Drain Snake", "alternative_names": ["auger", "plumbers snake"], "use": "Clearing deep drain blockages"}
+  ],
+  "common_violations": [
+    {"id": "CV-PLUM-01", "issue": "No Teflon tape on threaded joints", "severity": "MINOR", "consequence": "Slow leak at joints"},
+    {"id": "CV-PLUM-02", "issue": "Back-pitched drain line", "severity": "MAJOR", "consequence": "Water pooling, eventual blockage"},
+    {"id": "CV-PLUM-03", "issue": "No shutoff valve on fixture supply", "severity": "MAJOR", "consequence": "Cannot isolate fixture for repair"},
+    {"id": "CV-PLUM-04", "issue": "Unsupported pipe span > 6 feet", "severity": "MAJOR", "consequence": "Pipe sag, stress on joints, eventual failure"},
+    {"id": "CV-PLUM-05", "issue": "Mixing galvanized and copper without dielectric union", "severity": "MAJOR", "consequence": "Galvanic corrosion, pinhole leaks"},
+    {"id": "CV-PLUM-06", "issue": "No primer used before PVC cement", "severity": "MINOR", "consequence": "Weak joint, potential separation"}
+  ]
+}
